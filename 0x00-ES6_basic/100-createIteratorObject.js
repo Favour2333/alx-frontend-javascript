@@ -38,11 +38,3 @@ const report = {
   },
 };
 
-const iterator = createIteratorObject(report);
-
-console.log(iterator.next()); // { value: 'John Doe', done: false }
-console.log(iterator.next()); // { value: 'Guillaume Salva', done: false }
-console.log(iterator.next()); // { value: 'Jane Smith', done: false }
-console.log(iterator.next()); // { value: 'Mark Johnson', done: false }
-console.log(iterator.next()); // { value: 'Emily Davis', done: false }
-console.log(iterator.next()); // { done: true }
