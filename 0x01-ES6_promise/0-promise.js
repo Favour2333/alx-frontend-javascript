@@ -1,11 +1,10 @@
 function getResponseFromAPI() {
-  return new Promise((resolve) => {
-    const response = {
-      status: 200,
-      body: 'photo-profile-1',
-    };
-    
-    resolve(response);
+  return new Promise((resolve, reject) => {
+    // Perform API request or any asynchronous operation here
+    // For demonstration purposes, we'll resolve the promise after a delay of 1 second
+    setTimeout(() => {
+      resolve("API response");
+    }, 1000);
   });
 }
 
