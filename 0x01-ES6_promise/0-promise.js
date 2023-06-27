@@ -4,9 +4,9 @@ function getResponseFromAPI() {
     setTimeout(() => {
       const response = {
         status: 200,
-        body: 'API response data',
+        body: 'photo-profile-1',
       };
-      
+
       resolve(response);
     }, 2000);
   });
