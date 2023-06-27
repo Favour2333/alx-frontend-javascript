@@ -1,24 +1,16 @@
 function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
     if (success) {
-      const response = {
-        status: 200,
-        body: 'Success',
-      };
-
-      resolve(response);
+      resolve({ status: 200, body: 'Success' });
     } else {
-      const errorMessage = 'The fake API is not working currently';
-      reject(new Error(errorMessage));
+      reject(new Error('The fake API is not working currently'));
     }
   });
 }
 
 export default getFullResponseFromAPI;
-import getFullResponseFromAPI from './1-promise.js';
+import getFullResponseFromAPI from './1-promise';
 
 console.log(getFullResponseFromAPI(true));
 console.log(getFullResponseFromAPI(false));
-Promise { { status: 200, body: 'Success' } }
-Promise { <rejected> Error: The fake API is not working currently }
 
