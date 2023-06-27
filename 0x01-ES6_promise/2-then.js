@@ -1,21 +1,29 @@
 function handleResponseFromAPI(promise) {
   return promise
-    .then((response) => {
-      console.log('Got a response from the API');
+    .then(function(response) {
       return {
         status: 200,
-        body: 'success',
+        body: 'success'
       };
     })
-    .catch(() => new Error());
+    .catch(function(error) {
+      return new Error();
+    });
 }
-
-export default handleResponseFromAPI;
-import handleResponseFromAPI from './utils.js';
-
-const promise = // your promise here
-
-handleResponseFromAPI(promise)
-  .then((response) => console.log(response))
-  .catch((error) => console.log(error));
-
+promise.then(
+    response => {
+      console.log("Got a response from the API");
+      return {
+        status: 200,
+        body: "success"
+      };
+    },
+    error => {
+      console.log("Got an error from the API");
+      return {
+        status: 500,
+        body: "error"
+      };
+    }
+  );
+}
