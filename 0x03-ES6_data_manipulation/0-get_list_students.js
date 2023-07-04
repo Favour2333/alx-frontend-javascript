@@ -5,6 +5,7 @@
  *   firstName: String,
  *   location: String,
  * }[]} students - The list of students.
+ * @author kingsley favour <https://github.com/favour233>
  * @returns
  */
 export default function getListStudentIds(students) {
