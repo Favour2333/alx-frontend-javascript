@@ -1,6 +1,6 @@
 /**
  * This function retrieves an array of student ids from a list of objects.
- * Author: Kingsley Favour <https://github.com/favour233>
+ * Author: Kingsley Favour <https://github.com/favour2333>
  * @param {{
  *   id: Number,
  *   firstName: String,
