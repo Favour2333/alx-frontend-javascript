@@ -1,4 +1,5 @@
-function getFullResponseFromAPI(success) {
+// 1-promise.js
+export default function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
     if (success) {
       resolve({ status: 200, body: 'Success' });
@@ -7,5 +8,3 @@ function getFullResponseFromAPI(success) {
     }
   });
 }
-
-export default getFullResponseFromAPI;
